@@ -12,13 +12,12 @@ struct node * root = NULL;
 
 struct node * getNode(int);
 struct node * insertNode(struct node * , int);
+
 void inorder(struct node *);
 
 
-
 void main(){
-    int op;
-    int val;
+    int op, val;
     do{
         printf("\n[1] Insert\n[2]display BST\n[-1]to exit\n");
         printf("\nEnter option: ");

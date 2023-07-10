@@ -19,7 +19,7 @@ void main(){
 void revString(char str[], int l){
     while(t < l){
         t++;
-        revStack[t] = str[t];
+        revStack[t] = str[t];        
     }
     printf("The reversed string is \n");
     while(t>=0){

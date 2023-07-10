@@ -1,4 +1,3 @@
-
 // Develop programs to perform deletion of a
 // node in a Binary Search Tree.
 
@@ -22,14 +21,13 @@ void inorder(struct node *);
 
 
 void main(){
-    int op;
+    int op, val,d;
     do{
         printf("\n[1] Insert\n[2]display BST\n[3]delete node\n[-1]to exit\n");
         printf("\nEnter option: ");
         scanf("%d", &op);
         switch (op){
         case 1:
-            int val;
             printf("Enter value : ");
             scanf("%d", &val);
             root = insertNode(root, val);
@@ -40,7 +38,6 @@ void main(){
             break;
 
         case 3:
-            int d;
             printf("Enter data to delete : ");
             scanf("%d", &d);
             root = deleteNode(root, d);
